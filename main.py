@@ -2,6 +2,7 @@ from simple_term_menu import TerminalMenu
 from rich import print
 
 from modules import configPacman
+from modules.chrome import chrome
 from modules.installI3 import installI3
 from modules.installYay import installYay
 from modules.nvidia import nvidia
@@ -19,7 +20,6 @@ def menu():
             "Install i3",
             "Nvidia",
             "Chrome",
-            "Warp terminal",
             "Git ssh",
             "Download xubuntu from git",
             "Zsh Oh-my-zsh",
@@ -72,4 +72,7 @@ def menu():
     elif menu_entry_indices == 4:
         print("[blue]You choose to Nvidia.")
         nvidia()
+    elif menu_entry_indices == 5:
+        print("[blue]You choose to Chrome.")
+        chrome()
 menu()
