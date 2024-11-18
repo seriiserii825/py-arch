@@ -2,6 +2,7 @@ from simple_term_menu import TerminalMenu
 from rich import print
 
 from modules import configPacman
+from modules.installI3 import installI3
 from modules.installYay import installYay
 from modules.speedUpYay import speedUpYay
 
@@ -64,4 +65,7 @@ def menu():
     elif menu_entry_indices == 2:
         print("[blue]You choose to Speed up yay.")
         speedUpYay()
+    elif menu_entry_indices == 3:
+        print("[blue]You choose to Install i3.")
+        installI3()
 menu()
