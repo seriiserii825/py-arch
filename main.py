@@ -3,6 +3,7 @@ from rich import print
 
 from modules import configPacman
 from modules.installYay import installYay
+from modules.speedUpYay import speedUpYay
 
 def menu():
     main_menu_title = "[green]Main Menu.\n  Press Q or Esc to quit. \n"
@@ -60,4 +61,7 @@ def menu():
     elif menu_entry_indices == 1:
         print("[blue]You choose to Install yay.")
         installYay()
+    elif menu_entry_indices == 2:
+        print("[blue]You choose to Speed up yay.")
+        speedUpYay()
 menu()
