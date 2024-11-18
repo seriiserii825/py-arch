@@ -3,6 +3,7 @@ from rich import print
 
 from modules import configPacman
 from modules.chrome import chrome
+from modules.gitSsh import gitSsh
 from modules.installI3 import installI3
 from modules.installYay import installYay
 from modules.nvidia import nvidia
@@ -75,4 +76,8 @@ def menu():
     elif menu_entry_indices == 5:
         print("[blue]You choose to Chrome.")
         chrome()
+    elif menu_entry_indices == 6:
+        print("[blue]You choose to Git ssh.")
+        gitSsh()
+        
 menu()
