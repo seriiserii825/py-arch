@@ -2,6 +2,7 @@ from simple_term_menu import TerminalMenu
 from rich import print
 
 from modules import configPacman
+from modules.installYay import installYay
 
 def menu():
     main_menu_title = "[green]Main Menu.\n  Press Q or Esc to quit. \n"
@@ -56,4 +57,7 @@ def menu():
     elif menu_entry_indices == 0:
         print("[blue]You choose to Config pacman.conf.")
         configPacman.configPacman()
+    elif menu_entry_indices == 1:
+        print("[blue]You choose to Install yay.")
+        installYay()
 menu()
