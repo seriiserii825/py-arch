@@ -47,6 +47,7 @@ def menu():
             "Docker Compose",
             "Youtube",
             "Hyprland",
+            "Android"
             ]
 
     terminal_menu = TerminalMenu(
@@ -147,5 +148,8 @@ def menu():
     elif menu_entry_indices == 27:
         print("[blue]You choose to Hyprland.")
         os.system(f"bash {current_script_path}/scripts/hyprland.sh")
+    elif menu_entry_indices == 28:
+        print("[blue]You choose to Android.")
+        os.system(f"bash {current_script_path}/scripts/android.sh")
         
 menu()
