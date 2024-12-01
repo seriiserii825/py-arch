@@ -61,27 +61,10 @@ if [ ! -d $py_clipboard_path ]; then
   installPip
 fi
 
-# /home/serii/Documents/python/py-commit
-
 py_commit_path="/home/serii/Documents/python/py-commit"
 if [ ! -d $py_commit_path ]; then
   git clone git@github.com:seriiserii825/py-commit.git $py_commit_path
   cd $py_commit_path
   installPip
-fi
-
-# /home/serii/Documents/python/py-lv
-
-py_lv_path="/home/serii/Documents/python/py-lv"
-if [ ! -d $py_lv_path ]; then
-  git clone git@github.com:seriiserii825/py-lv.git
-  cd $py_lv_path
-  installPip
-fi
-
-if [ ! -d ~/Documents/bash-arch ]; then
-  git clone git@github.com:seriiserii825/bash-arch.git ~/Downloads/bash-arch
-  rm -rf ~/Documents/bash-arch/.git
-  cp -r ~/Downloads/bash-arch/.git ~/Documents/bash-arch/.git
 fi
 
