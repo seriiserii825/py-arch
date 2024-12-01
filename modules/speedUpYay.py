@@ -1,9 +1,10 @@
 import os
 import subprocess
-import sys
 from rich import print
 
-def modify_makepkg_file(makepkg_file_path, proc_numbr):
+def speedUpYay():
+    makepkg_file_path = '/etc/makepkg.conf'  # Replace with your actual file path
+    proc_numbr = os.cpu_count()
     # Read file contents
     if "MAKEFLAGS" in open(makepkg_file_path).read():
         with open(makepkg_file_path, 'r') as file:
@@ -26,12 +27,3 @@ def modify_makepkg_file(makepkg_file_path, proc_numbr):
     else:
         print("[blue]MAKEFLAGS is already uncommented")
 
-if __name__ == "__main__":
-    if os.geteuid() != 0:
-        print("[red]This script needs to be run as root or with sudo.")
-        sys.exit(1)
-
-    makepkg_file_path = '/etc/makepkg.conf'  # Replace with your actual file path
-    # proc_numbr=$(nproc)
-    proc_numbr = os.cpu_count()
-    modify_makepkg_file(makepkg_file_path, proc_numbr)
