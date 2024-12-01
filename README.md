@@ -47,11 +47,21 @@ nmcli device wifi connect SSID --ask
 ```
 
 ## start script
+### install git and python
 ```
-create dir Documents
-and clone this repo
-~/Documents/bash-arch
-cd ~/Documents/bash-arch
-chmod +x arch.sh
-./arch.sh
+sudo pacman -S git python python-pip
+```
+### create dir and clone
+```
+mkdir -p ~/Documents/python
+cd ~/Documents/python
+git clone https://github.com/seriiserii825/py-arch.git
+cd py-arch
+./pip.sh 
+select Install All
+```
+
+### run script
+```
+venv/bin/python main.py
 ```

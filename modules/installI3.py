@@ -54,4 +54,13 @@ def installI3():
     os.system("sudo systemctl start polkit.service")
     os.system("sudo systemctl enable polkit.service")
     os.system("sudo systemctl status polkit.service")
+
+    # pip global
+    # text = ```
+    # [global]
+    # break-system-packages = true
+    # ```
+    os.system("sudo touch /etc/pip.conf")
+    os.system("sudo echo '[global]\nbreak-system-packages = true' >> /etc/pip.conf")
+
     os.system("sudo reboot now")
