@@ -33,11 +33,9 @@ choos networkmanager
 
 ## After archinstall and before reboot
 
+<!-- sudo pacman -S linux-lts linux-lts-headers -->
 ```
-sudo pacman -S linux-lts linux-lts-headers
-old - sudo pacman -S linux-headers
-
-sudo pacman -S broadcom-wl networkmanager
+sudo pacman -S linux-headers networkmanager broadcom-wl
 sudo systemctl enable NetworkManager
 ```
 
