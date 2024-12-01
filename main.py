@@ -12,6 +12,24 @@ from modules.speedUpYay import speedUpYay
 
 current_script_path = os.path.dirname(os.path.realpath(__file__))
 
+def saveLastSelect(index):
+    scripts_root_path = os.path.dirname(os.path.realpath(__file__))
+    with open(f"{scripts_root_path}/last_select.txt", "w") as f:
+        f.write(str(index))
+
+def getLastSelect():
+    scripts_root_path = os.path.dirname(os.path.realpath(__file__))
+    if not os.path.exists(f"{scripts_root_path}/last_select.txt"):
+        return 0
+    with open(f"{scripts_root_path}/last_select.txt", "r") as f:
+        file_content = f.read()
+        file_content = file_content.strip()
+        file_content = file_content.replace("\n", "")
+        # file_content to int
+        if not file_content.isdigit() or file_content == "0":
+            return 0
+        else:
+            return int(file_content)
 
 def menu():
     main_menu_title = "[green]Main Menu.\n  Press Q or Esc to quit. \n"
@@ -50,6 +68,11 @@ def menu():
             "Android"
             ]
 
+    get_last_select = getLastSelect()
+    print(f"[green] Last select: {get_last_select}")
+    print(f"[blue] Last select: {menu_list[get_last_select]}")
+    input("Press Enter to continue...")
+
     terminal_menu = TerminalMenu(
             title=main_menu_title,
             menu_entries=menu_list,
@@ -61,6 +84,10 @@ def menu():
             )
 
     menu_entry_indices = terminal_menu.show()
+    if menu_entry_indices is None:
+        saveLastSelect(0)
+    else:
+        saveLastSelect(menu_entry_indices)
     if menu_entry_indices is None:
         print("[red]You choose to quit the menu.")
     elif menu_entry_indices == 0:
