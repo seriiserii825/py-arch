@@ -12,7 +12,6 @@ function installApp(){
     "telegram-desktop"
     "flameshot"
     "php"
-    "mysql"
     "tesseract"
     "tesseract-data-eng"
     "translate-shell"
