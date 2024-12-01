@@ -1,9 +1,13 @@
 import os
+from rich import print
 
 
 def chrome():
-    print("Installing Google Chrome")
+    print("[red]Setup copyq afer press enter")
+    os.system("copyq")
+    # wait for user to press enter
+    input()
     os.system("yay -S google-chrome")
-    print("Installing ChromeDriver")
+    print("[blue]Installing ChromeDriver")
     os.system("yay -S chromedriver")
     
