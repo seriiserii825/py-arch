@@ -27,3 +27,6 @@ def speedUpYay():
     else:
         print("[blue]MAKEFLAGS is already uncommented")
 
+    # grep -n "MAKEFLAGS" $makepkg_file_path
+    os.system(f'grep -n "MAKEFLAGS" {makepkg_file_path}')
+
