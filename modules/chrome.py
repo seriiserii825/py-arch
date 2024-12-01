@@ -10,4 +10,5 @@ def chrome():
     os.system("yay -S google-chrome")
     print("[blue]Installing ChromeDriver")
     os.system("yay -S chromedriver")
+    print("[green]Chrome installed successfully, now sign in to your google account")
     
