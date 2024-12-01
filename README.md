@@ -43,7 +43,7 @@ sudo systemctl enable NetworkManager
 
 ```
 nmcli device wifi list
-nmcli device wifi connect SSID password PASSWORD
+nmcli device wifi connect SSID --ask
 ```
 
 ## start script
