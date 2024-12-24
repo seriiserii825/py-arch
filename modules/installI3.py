@@ -24,6 +24,7 @@ def installI3():
             "copyq",
             "openssh",
             "xclip",
+            "rofimoji",
             "xsel",
             "jq",
             "bat",
