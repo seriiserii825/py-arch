@@ -16,6 +16,8 @@ rm FiraCode.zip
 
 echo "Nerd Fonts installed"
 
+sudo pacman -S noto-fonts-emoji
+
 sleep 2
 
 echo "Now will reboot"
