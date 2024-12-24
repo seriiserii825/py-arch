@@ -65,7 +65,8 @@ def menu():
             "Docker Compose",
             "Youtube",
             "Hyprland",
-            "Android"
+            "Android",
+            "Emojji",
             ]
 
     get_last_select = getLastSelect()
@@ -178,5 +179,8 @@ def menu():
     elif menu_entry_indices == 28:
         print("[blue]You choose to Android.")
         os.system(f"bash {current_script_path}/scripts/android.sh")
+    elif menu_entry_indices == 29:
+        print("[blue]Emojji.")
+        os.system(f"bash {current_script_path}/scripts/emojji.sh")
         
 menu()
