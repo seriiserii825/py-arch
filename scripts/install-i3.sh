@@ -1,5 +1,4 @@
 cd 
-sudo pacman -S vi vifm python 
 sudo touch /etc/pip.conf
 sudo echo "[global]\nbreak-system-packages = true" >> /etc/pip.conf
 

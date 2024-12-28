@@ -5,6 +5,7 @@ from rich import print
 from modules import configPacman
 from modules.chrome import chrome
 from modules.gitSsh import gitSsh
+from modules.installAllApps import installAllApps
 from modules.installI3 import installI3
 from modules.installYay import installYay
 from modules.nvidia import nvidia
@@ -39,7 +40,7 @@ def menu():
     menu_list = [
             "Config pacman.conf",
             "Install yay",
-            "Speed up yay",
+            "Speed up yay and install All needed apps for start",
             "Install i3",
             "Nvidia",
             "Chrome",
@@ -97,8 +98,9 @@ def menu():
     elif menu_entry_indices == 1:
         print("[blue]You choose to Install yay.")
         installYay()
+        installAllApps()
     elif menu_entry_indices == 2:
-        print("[blue]You choose to Speed up yay.")
+        print("[blue]Speed up yay and install All needed apps for start")
         speedUpYay()
     elif menu_entry_indices == 3:
         print("[blue]You choose to Install i3.")

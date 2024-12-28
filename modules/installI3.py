@@ -2,11 +2,6 @@ import os
 
 
 def installI3():
-    os.system("cd ~/Downloads")
-    os.system("sudo pacman -S vi vifm python")
-    os.system("sudo touch /etc/pip.conf")
-    os.system("sudo echo '[global]\nbreak-system-packages = true' >> /etc/pip.conf")
-    os.system("mkdir Downloads Documents Picture")
     packages= [
             "xorg",
             "xorg-xinit",
@@ -14,35 +9,9 @@ def installI3():
             "i3",
             "polybar",
             "mousepad",
-            "polkit",
-            "dunst",
-            "lxsession",
-            "xorg-apps",
-            "libnotify",
-            "alacritty",
             "dmenu",
-            "copyq",
-            "openssh",
-            "xclip",
-            "rofimoji",
-            "xsel",
-            "jq",
-            "bat",
-            "wget",
-            "curl",
-            "gnome-keyring",
-            "polkit-gnome",
-            "unzip",
-            "zip",
             "nitrogen",
             "feh",
-            "linux-firmware",
-            "libmagick",
-            "jpegoptim",
-            "ttf-dejavu",
-            "awesome-terminal-fonts",
-            "woff2",
-            "dosfstools"
             ]
     os.system("sudo pacman -S " + " ".join(packages))
     os.system("cd")
