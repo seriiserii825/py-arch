@@ -2,8 +2,8 @@ function installAll(){
   sudo pacman -Syu
   sudo pacman -S hyprland wofi waybar swaylock swaync dunst dosfstools hyprpicker
   sudo pacman -S copyq openssh xclip xsel jq bat wget curl gnome-keyring polkit-gnome 
-  sudo pacman -S unzip zip linux-firmware libmagick jpegoptim
-  yay -S wlogout hyprshot hyprpolkitagent
+  sudo pacman -S unzip zip linux-firmware libmagick jpegoptim nwg-look ttf-jetbrains-mono
+  yay -S wlogout hyprshot hyprpolkitagent graphite-gtk-theme papirus-icon-theme
 }
 
 function symlinkAll(){
