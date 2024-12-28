@@ -1,7 +1,9 @@
 function installAll(){
   sudo pacman -Syu
-  sudo pacman -S hyprland wofi waybar swaylock
-  yay -S wlogout
+  sudo pacman -S hyprland wofi waybar swaylock swaync dunst dosfstools hyprpicker
+  sudo pacman -S copyq openssh xclip xsel jq bat wget curl gnome-keyring polkit-gnome 
+  sudo pacman -S unzip zip linux-firmware libmagick jpegoptim
+  yay -S wlogout hyprshot hyprpolkitagent
 }
 
 function symlinkAll(){
@@ -17,6 +19,8 @@ function symlinkAll(){
   ln -s ~/xubuntu/hyprland/waybar
   ln -s ~/xubuntu/hyprland/wlogout
   ln -s ~/xubuntu/hyprland/wofi
+
+  echo "go to hyprland.conf and add a source source = ~/.config/hypr/hypr.conf"
 }
 
 function setupMonitors(){
