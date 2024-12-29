@@ -13,7 +13,11 @@ def installI3():
             "nitrogen",
             "feh",
             ]
+    yay_packages= [
+            "pulseaudio-control"
+            ]
     os.system("sudo pacman -S " + " ".join(packages))
+    os.system("yay -S " + " ".join(yay_packages))
     os.system("cd")
     os.system("cp /etc/X11/xinitrc > ~/.xinitrc")
     text_to_insert= "exec i3 &\ndunst &\nlxsession"
