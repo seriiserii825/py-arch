@@ -18,3 +18,7 @@ rm /home/serii/.config/google-chrome/Default/Preferences
 ln -s ~/xubuntu/Preferences /home/serii/.config/google-chrome/Default/Preferences
 rm ~/.gitconfig
 ln -s ~/xubuntu/.gitconfig ~/.gitconfig
+rm ~/xubuntu/copyq/copyq.conf
+ln -s ~/xubuntu/copyq/copyq.conf
+rm ~/.config/copyq/copyq-commands.ini
+ln -s ~/xubuntu/copyq/copyq-commands.ini
