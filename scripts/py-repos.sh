@@ -42,14 +42,14 @@ fi
 
 py_scss_path="/home/serii/Documents/python/py-scss"
 if [ ! -d $py_scss_path ]; then
-  git clone https://github.com/seriiserii825/py-scss $py_scss_path
+  git clone git@github.com/seriiserii825/py-scss $py_scss_path
   cd $py_scss_path
   installPip
 fi
 
-py_sync_system_path="/home/serii/Documents/python/py-sync-system"
+py_sync_system_path="/home/serii/Documents/python/py-sync-settings"
 if [ ! -d $py_sync_system_path ]; then
-  git clone git@github.com:seriiserii825/py-sync-system.git $py_sync_system_path
+  git clone git@github.com:seriiserii825/py-sync-settings.git $py_sync_system_path
   cd $py_sync_system_path
   installPip
 fi
