@@ -1,4 +1,4 @@
-sudo pacman -S php mariadb
+sudo pacman -S php mariadb wp-cli
 sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 sudo systemctl start mysql.service
 sudo systemctl status mysql.service
