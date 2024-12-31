@@ -60,6 +60,14 @@ if [ ! -d $py_commit_path ]; then
   cd $py_commit_path
   installPip
 fi
+
+py_vue_path="/home/serii/Documents/python/py-vue"
+if [ ! -d $py_vue_path ]; then
+  git clone git@github.com:seriiserii825/py-vue.git $py_vue_path
+  cd $py_vue_path
+  installPip
+fi
+
 rm -rf /home/serii/Documents/python/py-sync-settings
 py_sync_system_path="/home/serii/Documents/python/py-sync-settings"
 if [ ! -d $py_sync_system_path ]; then
