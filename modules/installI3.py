@@ -12,7 +12,8 @@ def installI3():
             "dmenu",
             "nitrogen",
             "feh",
-            "rsync"
+            "rsync",
+            "tk"
             ]
     yay_packages= [
             "pulseaudio-control"
