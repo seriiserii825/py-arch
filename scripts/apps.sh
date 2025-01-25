@@ -4,6 +4,8 @@ sudo pacman -S bat wget curl gnome-keyring unzip zip linux-firmware libmagick jp
 sudo pacman -S git lazygit
 sudo pacman -S telegram-desktop flameshot php tesseract tesseract-data-eng translate-shell
 sudo pacman -S google-chrome
+## for docker up in old notebook
+sudo pacman -S libxcrypt-compat
 yay -S skypeforlinux-bin st
 yay -S chromedriver
 yay -S pyenv pyenv-virtualenv
