@@ -22,3 +22,7 @@ rm ~/xubuntu/copyq/copyq.conf
 ln -s ~/xubuntu/copyq/copyq.conf
 rm ~/.config/copyq/copyq-commands.ini
 ln -s ~/xubuntu/copyq/copyq-commands.ini
+
+rm -rf ~/Documents/python/py-arch
+cd ~/Documents/python
+git clone git@github.com:seriiserii825/py-arch.git
