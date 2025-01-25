@@ -6,3 +6,4 @@ sudo pacman -S telegram-desktop flameshot php tesseract tesseract-data-eng trans
 sudo pacman -S google-chrome
 yay -S skypeforlinux-bin st
 yay -S chromedriver
+yay -S pyenv pyenv-virtualenv
