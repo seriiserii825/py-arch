@@ -1,5 +1,3 @@
-echo "${tgreen}Installing google chrome from aur${treset}"
-
 read -p "${tmagenta}Start copyq, configure and after script end, will have sshkey in clipboard${tmagena}" -n 1 -r
 
 echo "${tblue}Installing ssh git${treset}"
