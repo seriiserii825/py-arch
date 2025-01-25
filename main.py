@@ -2,7 +2,6 @@ import os
 from simple_term_menu import TerminalMenu
 from rich import print
 
-from modules import configPacman
 from modules.chrome import chrome
 from modules.gitSsh import gitSsh
 from modules.installAllApps import installAllApps
@@ -94,7 +93,7 @@ def menu():
         print("[red]You choose to quit the menu.")
     elif menu_entry_indices == 0:
         print("[blue]You choose to Config pacman.conf.")
-        configPacman.configPacman()
+        os.system(f"bash {current_script_path}/scripts/configure-pacman.sh")
     elif menu_entry_indices == 1:
         print("[blue]You choose to Install yay.")
         installYay()
