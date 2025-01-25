@@ -11,8 +11,6 @@ xclip -sel clip < ~/.ssh/id_rsa.pub
 git config --global user.email "seriiburduja@gmail.com"
 git config --global user.name "Serii"
 
-sudo pacman -S lazygit
-
 cd ~/Downloads
 
 git clone https://github.com/fboender/multi-git-status.git
