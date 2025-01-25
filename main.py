@@ -39,7 +39,7 @@ def menu():
     menu_list = [
             "Config pacman.conf",
             "Install yay",
-            "Speed up yay and install All needed apps for start",
+            "Speed up yay",
             "Apps",
             "Install i3",
             "Nvidia",
@@ -99,7 +99,7 @@ def menu():
         installYay()
         installAllApps()
     elif menu_entry_indices == 2:
-        print("[blue]Speed up yay and install All needed apps for start")
+        print("[blue]Speed up yay")
         speedUpYay()
     elif menu_entry_indices == 3:
         print("[blue]You choose to Install i3.")
