@@ -2,7 +2,6 @@ import os
 from simple_term_menu import TerminalMenu
 from rich import print
 
-from modules.chrome import chrome
 from modules.gitSsh import gitSsh
 from modules.installAllApps import installAllApps
 from modules.installI3 import installI3
@@ -43,7 +42,6 @@ def menu():
             "Apps",
             "Install i3",
             "Nvidia",
-            "Chrome",
             "Git ssh",
             "Download xubuntu from git",
             "Zsh Oh-my-zsh",
@@ -111,76 +109,73 @@ def menu():
         print("[blue]You choose to Nvidia.")
         nvidia()
     elif menu_entry_indices == 6:
-        print("[blue]You choose to Chrome.")
-        chrome()
-    elif menu_entry_indices == 7:
         print("[blue]You choose to Git ssh.")
         gitSsh()
-    elif menu_entry_indices == 9:
+    elif menu_entry_indices == 7:
         print("[blue]You choose to Download xubuntu from git.")
         os.system(f"bash {current_script_path}/scripts/xubuntu.sh")
-    elif menu_entry_indices == 10:
+    elif menu_entry_indices == 8:
         print("[blue]You choose to Zsh Oh-my-zsh.")
         os.system(f"bash {current_script_path}/scripts/zsh.sh")
-    elif menu_entry_indices == 11:
+    elif menu_entry_indices == 9:
         print("[blue]You choose to nvm(node js).")
         print(f"current_script_path: {current_script_path}")
         os.system(f"bash {current_script_path}/scripts/nvm.sh")
-    elif menu_entry_indices == 12:
+    elif menu_entry_indices == 10:
         print("[blue]You choose to Neovim.")
         os.system(f"bash {current_script_path}/scripts/nvim.sh")
-    elif menu_entry_indices == 13:
+    elif menu_entry_indices == 11:
         print("[blue]You choose to Nerd Fonts.")
         os.system(f"bash {current_script_path}/scripts/nerd-fonts.sh")
-    elif menu_entry_indices == 14:
+    elif menu_entry_indices == 12:
         print("[blue]You choose to Locale.")
         os.system(f"bash {current_script_path}/scripts/locale.sh")
-    elif menu_entry_indices == 15:
+    elif menu_entry_indices == 13:
         print("[blue]You choose to Bash repos.")
         os.system(f"bash {current_script_path}/scripts/bash-repos.sh")
-    elif menu_entry_indices == 16:
+    elif menu_entry_indices == 14:
         print("[blue]You choose to Gpg Pass.")
         os.system(f"bash {current_script_path}/scripts/gpg.sh")
-    elif menu_entry_indices == 17:
+    elif menu_entry_indices == 15:
         print("[blue]You choose to Py repos.")
         os.system(f"bash {current_script_path}/scripts/py-repos.sh")
-    elif menu_entry_indices == 18:
+    elif menu_entry_indices == 16:
         print("[blue]You choose to Audio.")
         os.system(f"bash {current_script_path}/scripts/audio.sh")
-    elif menu_entry_indices == 19:
+    elif menu_entry_indices == 17:
         print("[blue]You choose to Bluetooth.")
         os.system(f"bash {current_script_path}/scripts/bluetooth.sh")
-    elif menu_entry_indices == 20:
+    elif menu_entry_indices == 18:
         print("[blue]You choose to BrowserPass.")
         os.system(f"bash {current_script_path}/scripts/browserpass.sh")
-    elif menu_entry_indices == 21:
+    elif menu_entry_indices == 19:
         print("[blue]You choose to Chrome extenstions.")
         os.system(f"bash {current_script_path}/scripts/chrome-extensions.sh")
-    elif menu_entry_indices == 22:
+    elif menu_entry_indices == 20:
         print("[blue]You choose to Local wp.")
         os.system(f"bash {current_script_path}/scripts/local-by-flywheel.sh")
-    elif menu_entry_indices == 23:
+    elif menu_entry_indices == 21:
         print("[blue]You choose to Libre Office.")
         os.system(f"bash {current_script_path}/scripts/libre-office.sh")
-    elif menu_entry_indices == 24:
+    elif menu_entry_indices == 22:
         print("[blue]You choose to Smtp.")
         os.system(f"bash {current_script_path}/scripts/smtp.sh")
-    elif menu_entry_indices == 25:
+    elif menu_entry_indices == 23:
         print("[blue]You choose to Docker.")
         os.system(f"bash {current_script_path}/scripts/docker.sh")
-    elif menu_entry_indices == 26:
+    elif menu_entry_indices == 24:
         print("[blue]You choose to Docker Compose.")
         os.system(f"bash {current_script_path}/scripts/docker-compose.sh")
-    elif menu_entry_indices == 27:
+    elif menu_entry_indices == 25:
         print("[blue]You choose to Youtube.")
         os.system(f"bash {current_script_path}/scripts/youtube.sh")
-    elif menu_entry_indices == 28:
+    elif menu_entry_indices == 26:
         print("[blue]You choose to Hyprland.")
         os.system(f"bash {current_script_path}/scripts/hyprland.sh")
-    elif menu_entry_indices == 29:
+    elif menu_entry_indices == 27:
         print("[blue]You choose to Android.")
         os.system(f"bash {current_script_path}/scripts/android.sh")
-    elif menu_entry_indices == 30:
+    elif menu_entry_indices == 28:
         print("[blue]Emojji.")
         os.system(f"bash {current_script_path}/scripts/emojji.sh")
         
