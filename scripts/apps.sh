@@ -9,3 +9,4 @@ sudo pacman -S libxcrypt-compat
 yay -S skypeforlinux-bin st
 yay -S chromedriver
 yay -S pyenv pyenv-virtualenv
+yay -S telegram-tg
