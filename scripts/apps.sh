@@ -4,7 +4,7 @@ sudo pacman -S bat wget curl gnome-keyring unzip zip linux-firmware libmagick jp
 sudo pacman -S git lazygit
 sudo pacman -S telegram-desktop flameshot php tesseract tesseract-data-eng translate-shell
 sudo pacman -S google-chrome
-sudo pacman -S tldr entr bashtop atuin
+sudo pacman -S tldr entr bashtop atuin lsd
 ## for docker up in old notebook
 sudo pacman -S libxcrypt-compat
 yay -S skypeforlinux-bin st
