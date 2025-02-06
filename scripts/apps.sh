@@ -8,5 +8,6 @@ sudo pacman -S tldr entr bashtop atuin lsd
 ## for docker up in old notebook
 sudo pacman -S libxcrypt-compat
 yay -S skypeforlinux-bin st
+yay -S google-chrome
 yay -S chromedriver
 yay -S pyenv pyenv-virtualenv
