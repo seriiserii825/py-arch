@@ -6,6 +6,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 sudo chmod 666 /var/run/docker.sock
-sudo usermod -aG docker serii
+current_user=$(whoami)
+sudo usermod -aG docker $current_user
 sudo chmod 666 /var/run/docker.sock
 newgrp docker
