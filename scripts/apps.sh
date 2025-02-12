@@ -5,6 +5,7 @@ sudo pacman -S git lazygit
 sudo pacman -S telegram-desktop flameshot php tesseract tesseract-data-eng translate-shell
 sudo pacman -S google-chrome
 sudo pacman -S tldr entr bashtop atuin lsd
+sudo pacman -S libreoffice-fresh 
 ## for docker up in old notebook
 sudo pacman -S libxcrypt-compat
 yay -S skypeforlinux-bin st
