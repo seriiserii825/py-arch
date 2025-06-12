@@ -11,10 +11,12 @@ from modules.speedUpYay import speedUpYay
 
 current_script_path = os.path.dirname(os.path.realpath(__file__))
 
+
 def saveLastSelect(index):
     scripts_root_path = os.path.dirname(os.path.realpath(__file__))
     with open(f"{scripts_root_path}/last_select.txt", "w") as f:
         f.write(str(index))
+
 
 def getLastSelect():
     scripts_root_path = os.path.dirname(os.path.realpath(__file__))
@@ -30,42 +32,43 @@ def getLastSelect():
         else:
             return int(file_content)
 
+
 def menu():
     main_menu_title = "[green]Main Menu.\n  Press Q or Esc to quit. \n"
     main_menu_cursor = "> "
     main_menu_cursor_style = ("fg_red", "bold")
     main_menu_style = ("bg_red", "fg_yellow")
     menu_list = [
-            "Config pacman.conf",
-            "Install yay",
-            "Speed up yay",
-            "Apps",
-            "Install i3",
-            "Nvidia",
-            "Git ssh",
-            "Download xubuntu from git",
-            "Zsh Oh-my-zsh",
-            "nvm(node js)",
-            "Neovim",
-            "Nerd Fonts",
-            "Locale",
-            "Bash repos",
-            "Gpg Pass",
-            "Py repos",
-            "Audio",
-            "Bluetooth",
-            "BrowserPass",
-            "Chrome extenstions",
-            "Local wp",
-            "Libre Office",
-            "Smtp",
-            "Docker",
-            "Docker Compose",
-            "Youtube",
-            "Hyprland",
-            "Android",
-            "Emojji",
-            ]
+        "Config pacman.conf",
+        "Install yay",
+        "Speed up yay",
+        "Apps",
+        "Install i3",
+        "Nvidia",
+        "Git ssh",
+        "Download xubuntu from git",
+        "Zsh Oh-my-zsh",
+        "nvm(node js)",
+        "Neovim",
+        "Nerd Fonts",
+        "Locale",
+        "Bash repos",
+        "Gpg Pass",
+        "Py repos",
+        "Audio",
+        "Bluetooth",
+        "BrowserPass",
+        "Chrome extenstions",
+        "Local wp",
+        "Libre Office",
+        "Smtp",
+        "Docker",
+        "Docker Compose",
+        "Youtube",
+        "Hyprland",
+        "Android",
+        "Emojji",
+    ]
 
     get_last_select = getLastSelect()
     print(f"[green] Last select: {get_last_select}")
@@ -73,14 +76,14 @@ def menu():
     input("Press Enter to continue...")
 
     terminal_menu = TerminalMenu(
-            title=main_menu_title,
-            menu_entries=menu_list,
-            menu_cursor_style=main_menu_cursor_style,
-            menu_highlight_style=main_menu_style,
-            menu_cursor=main_menu_cursor,
-            cycle_cursor=True,
-            clear_screen=True,
-            )
+        title=main_menu_title,
+        menu_entries=menu_list,
+        menu_cursor_style=main_menu_cursor_style,
+        menu_highlight_style=main_menu_style,
+        menu_cursor=main_menu_cursor,
+        cycle_cursor=True,
+        clear_screen=True,
+    )
 
     menu_entry_indices = terminal_menu.show()
     if menu_entry_indices is None:
@@ -178,5 +181,6 @@ def menu():
     elif menu_entry_indices == 28:
         print("[blue]Emojji.")
         os.system(f"bash {current_script_path}/scripts/emojji.sh")
-        
+
+
 menu()
