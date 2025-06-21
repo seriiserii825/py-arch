@@ -9,6 +9,7 @@ sudo pacman -S libreoffice-fresh
 ## for docker up in old notebook
 sudo pacman -S libxcrypt-compat --noconfirm
 sudo pacman -S yazi ffmpeg 7zip poppler fd ripgrep fzf zoxide imagemagick --noconfirm
+sudo pacman -S glow # markdown viewer in yazi
 yay -S resvg --noconfirm
 yay -S google-chrome-stable-bin --noconfirm
 yay -S chromedriver --noconfirm
