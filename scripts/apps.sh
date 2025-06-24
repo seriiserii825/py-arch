@@ -14,3 +14,4 @@ yay -S google-chrome-stable-bin --noconfirm
 yay -S chromedriver --noconfirm
 yay -S pyenv pyenv-virtualenv --noconfirm
 yay -s ghostty --noconfirm
+yay -s resvg --noconfirm
