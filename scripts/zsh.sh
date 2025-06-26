@@ -12,4 +12,10 @@ git clone https://github.com/z-shell/F-Sy-H.git \
 
 sudo pacman -S exa ripgrep universal-ctags fd the_silver_searcher python-pynvim fzf ack zoxide
 
-sudo reboot now
+agree = input("Need to reboot to apply changes? (y/n): ")
+if [[ $agree == "y" ]]; then
+  echo "Rebooting..."
+  sudo reboot now
+else
+  echo "Logout to apply changes."
+fi
