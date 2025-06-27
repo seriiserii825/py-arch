@@ -11,9 +11,10 @@ git clone https://github.com/zsh-users/zsh-completions.git \
 git clone https://github.com/z-shell/F-Sy-H.git \
   ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/F-Sy-H
 
-sudo pacman -S exa ripgrep universal-ctags fd the_silver_searcher python-pynvim fzf ack zoxide
+sudo pacman -S exa ripgrep universal-ctags fd the_silver_searcher python-pynvim fzf zoxide
 
-agree = input("Need to reboot to apply changes? (y/n): ")
+read -p "Need to reboot to apply changes? (y/n): " agree
+
 if [[ $agree == "y" ]]; then
   echo "Rebooting..."
   sudo reboot now
