@@ -23,4 +23,3 @@ def nvidia():
         print("Invalid input")
         exit(1)
     os.system("sudo reboot now")
-

@@ -15,4 +15,3 @@ def installYay():
     os.system("sudo pacman -S sddm")
     os.system("sudo systemctl enable sddm.service")
     print("[blue]Yay is now installed")
-

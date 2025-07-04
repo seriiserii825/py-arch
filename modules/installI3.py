@@ -2,27 +2,25 @@ import os
 
 
 def installI3():
-    packages= [
-            "xorg",
-            "xorg-xinit",
-            "rofi",
-            "i3",
-            "polybar",
-            "mousepad",
-            "dmenu",
-            "nitrogen",
-            "feh",
-            "rsync",
-            "tk"
-            ]
-    yay_packages= [
-            "pulseaudio-control"
-            ]
+    packages = [
+        "xorg",
+        "xorg-xinit",
+        "rofi",
+        "i3",
+        "polybar",
+        "mousepad",
+        "dmenu",
+        "nitrogen",
+        "feh",
+        "rsync",
+        "tk",
+    ]
+    yay_packages = ["pulseaudio-control"]
     os.system("sudo pacman -S " + " ".join(packages))
     os.system("yay -S " + " ".join(yay_packages))
     os.system("cd")
     os.system("cp /etc/X11/xinitrc > ~/.xinitrc")
-    text_to_insert= "exec i3 &\ndunst &\nlxsession"
+    text_to_insert = "exec i3 &\ndunst &\nlxsession"
     os.system(f'echo "{text_to_insert}" >> ~/.xinitrc')
     os.system("chmod +x .xinitrc")
     os.system("cp /etc/X11/xinit/xserverrc ~/.xserverrc")
