@@ -1,5 +1,8 @@
 import os
+
 from rich import print
+
+
 def installYay():
     if os.system("yay --version") == 0:
         print("[blue]Yay is already installed")

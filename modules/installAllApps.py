@@ -1,5 +1,6 @@
 import os
 
+
 def installAllApps():
     os.system("cd ~/Downloads")
     os.system("sudo pacman -S vi vifm python")

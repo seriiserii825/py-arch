@@ -1,6 +1,6 @@
-import pyperclip
 import os
-from rich import print
+
+
 def gitSsh():
     ROOT_DIR = os.path.dirname(
         os.path.dirname(

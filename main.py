@@ -1,6 +1,7 @@
 import os
-from simple_term_menu import TerminalMenu
+
 from rich import print
+from simple_term_menu import TerminalMenu
 
 from modules.gitSsh import gitSsh
 from modules.installAllApps import installAllApps
