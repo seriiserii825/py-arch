@@ -4,6 +4,7 @@ __pycache__/
 last_select.txt
 # C extensions
 *.so
+uv.lock
 
 # Distribution / packaging
 bin/
