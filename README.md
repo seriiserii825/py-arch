@@ -27,14 +27,16 @@ ping ya.ru
 ## archinstall
 
 ```
+archinstall
 set disk configuration
 choos networkmanager
 ```
 
 ## After archinstall and before reboot
 
-<!-- sudo pacman -S linux-lts linux-lts-headers -->
 ```
+exit from archinstall
+
 sudo pacman -S linux-headers networkmanager broadcom-wl
 sudo systemctl enable NetworkManager
 ```
