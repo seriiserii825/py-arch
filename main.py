@@ -64,10 +64,7 @@ def menu():
         "Libre Office",
         "Smtp",
         "Docker",
-        "Docker Compose",
         "Youtube",
-        "Hyprland",
-        "Android",
         "Emojji",
     ]
 
@@ -168,18 +165,9 @@ def menu():
         print("[blue]You choose to Docker.")
         os.system(f"bash {current_script_path}/scripts/docker.sh")
     elif menu_entry_indices == 24:
-        print("[blue]You choose to Docker Compose.")
-        os.system(f"bash {current_script_path}/scripts/docker-compose.sh")
-    elif menu_entry_indices == 25:
         print("[blue]You choose to Youtube.")
         os.system(f"bash {current_script_path}/scripts/youtube.sh")
-    elif menu_entry_indices == 26:
-        print("[blue]You choose to Hyprland.")
-        os.system(f"bash {current_script_path}/scripts/hyprland.sh")
-    elif menu_entry_indices == 27:
-        print("[blue]You choose to Android.")
-        os.system(f"bash {current_script_path}/scripts/android.sh")
-    elif menu_entry_indices == 28:
+    elif menu_entry_indices == 25:
         print("[blue]Emojji.")
         os.system(f"bash {current_script_path}/scripts/emojji.sh")
 

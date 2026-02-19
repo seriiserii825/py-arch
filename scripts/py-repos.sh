@@ -21,7 +21,7 @@ function cloneRepo(){
   fi
 }
 
-repos_file_path="/home/$USER/xubuntu/zsh_modules/zsh_python"
+repos_file_path="/home/$USER/dotfiles/zsh_modules/zsh_python"
 # get all lines that start with "dir_path"
 dir_paths=$(grep '^dir_path' $repos_file_path | cut -d '=' -f 2 | tr -d ' ')
 # from the lines get the path after the equal sign and remove spaces
